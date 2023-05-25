@@ -1,0 +1,49 @@
+.header__logo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.header__logo:hover > .logo__title {
+  color: $button-bg-hover;
+  border-color: $button-bg-hover;
+  transition: all 0.5s ease-in-out;
+}
+.header__logo:hover > .logo__title_pets-page {
+  color: #292929;
+}
+.logo__subtitle:after {
+  content: "";
+  display: block;
+  width: 0%;
+  border-bottom: 2.5px solid $color-primary;
+  transition: all 0.5s ease-in-out;
+}
+.header__logo:hover > .logo__subtitle:after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-bottom: 2.5px solid $color-primary;
+  transition: all 0.5s ease-in-out;
+}
+
+.logo__title {
+  @extend %font-add;
+  @include font($size: 3.2rem, $height: 110%, $weight: normal);
+  letter-spacing: 0.06em;
+  color: $color-primary;
+  text-transform: capitalize;
+}
+.logo__title_pets-page {
+  color: $color-title;
+}
+.logo__subtitle {
+  @extend %font-prim;
+  @include font($size: 1.3rem, $height: 1.5rem, $weight: normal);
+  letter-spacing: 0.1em;
+  color: $color-additional;
+  margin-left: 4px;
+}
+.logo__subtitle_pets-page {
+  color: $dark-text;
+}

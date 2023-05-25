@@ -1,0 +1,109 @@
+.not-only__button {
+  background: $button-bg;
+  max-width: 207px;
+  @media (max-width: 900px) {
+    margin: 0 auto;
+  }
+}
+.button {
+  @extend %font-add;
+  @include font($size: 1.7rem, $height: 130%, $weight: normal);
+  letter-spacing: 0.06em;
+  color: $dark-text;
+  padding: 16px 44.9px;
+  border-radius: 100px;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    background: $button-bg-hover;
+    border-color: $button-bg-hover;
+    transform: scale(1.05);
+  }
+}
+.pet__button {
+  background: $bg-card;
+  border: 2px solid #f1cdb3;
+  padding: 12px 44.9px;
+}
+
+.slider__btn_prev {
+  & span {
+    transform: rotate(180deg);
+  }
+}
+
+.slider__btn {
+  @media (max-width: 767px) {
+    position: relative;
+    top: 60.5%;
+  }
+}
+.slider__btn_prev {
+  position: relative;
+  left: -3.65%;
+  @media (max-width: 768px) {
+    left: 0;
+  }
+  @media (max-width: 767px) {
+    left: 27%;
+  }
+  & span {
+    transform: rotate(180deg);
+  }
+}
+.slider__btn_next {
+  position: relative;
+  right: -3.65%;
+  @media (max-width: 768px) {
+    right: 0;
+  }
+  @media (max-width: 767px) {
+    right: 27%;
+  }
+}
+.slider__arrow {
+  font-size: 15px;
+}
+.small__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border: 2px solid #f1cdb3;
+  border-radius: 100px;
+  cursor: pointer;
+  @extend %font-add;
+  @include font($size: 2rem, $height: 115%, $weight: normal);
+  letter-spacing: 0.06em;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    background: $button-bg-hover;
+    border-color: $button-bg-hover;
+  }
+}
+.small__btn_disabled {
+  border: 2px solid #cdcdcd;
+  color: #cdcdcd;
+  cursor: default;
+  pointer-events: none;
+}
+
+.small__btn_chosen {
+  background: $button-bg;
+  border-color: $button-bg;
+}
+.our-friends__button {
+  background: $button-bg;
+  @media (max-width: 767px) {
+    margin-top: 72px;
+  }
+}
+.popup__btn {
+  position: absolute;
+  top: -52px;
+  right: -42px;
+  @media (max-width: 774px) {
+    top: -50px;
+    right: -32px;
+  }
+}

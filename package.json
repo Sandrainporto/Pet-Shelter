@@ -1,0 +1,12 @@
+{
+  "name": "shelter",
+  "version": "1.0.0",
+  "description": "two-paged website, adaptive, interactive, vanila JS",
+  "main": "index.js",
+  "scripts": {
+		"style": "sass --watch src/styles/scss/style.scss src/styles/css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexandra Barmin, @Sandrainporto",
+  "license": "ISC"
+}

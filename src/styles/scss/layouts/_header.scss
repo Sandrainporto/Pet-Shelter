@@ -1,0 +1,23 @@
+@import "../base/logo";
+@import "../components/navigation";
+@import "../base/burger";
+
+.header {
+  padding: 30px 0 90px;
+  @media (max-width: 1130px) {
+    padding: 30px 0;
+  }
+}
+.header_pets-page {
+  background: $color-additional;
+  padding: 30px 0;
+}
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 767px) {
+    padding: 0px 20px;
+  }
+}

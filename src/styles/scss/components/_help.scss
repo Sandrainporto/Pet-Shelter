@@ -1,0 +1,85 @@
+.help {
+  background: $color-additional;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+.help__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  @media (max-width: 490px) {
+    gap: 42px;
+  }
+}
+.help__title {
+  max-width: 310px;
+  text-align: center;
+  @media (max-width: 480px) {
+    max-width: 270px;
+  }
+}
+.help__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 55px 120px;
+  @media (max-width: 1083px) {
+    max-width: 684px;
+    gap: 55px 0px;
+  }
+  @media (max-width: 490px) {
+    max-width: 290px;
+    gap: 30px 29px;
+  }
+}
+.help__unit {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  align-items: center;
+  justify-content: center;
+  height: 113px;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+  @media (max-width: 1083px) {
+    flex: 0 1 33.33%;
+    width: 170px;
+    height: 113px;
+  }
+  @media (max-width: 495px) {
+    flex: 0 1 45%;
+    gap: 24px;
+    width: 130px;
+    height: 87px;
+  }
+}
+.help__unit:last-child {
+  @media (max-width: 495px) {
+    margin-right: 55%;
+  }
+}
+
+.unit__icon img {
+  margin-top: -3px;
+  margin-bottom: 4px;
+  @media (max-width: 495px) {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.unit__text {
+  @include font($size: 2rem, $height: 115%, $weight: normal);
+  letter-spacing: 0.06em;
+  @extend %font-add;
+  @media (max-width: 600px) {
+    @include font($size: 1.5rem, $height: 110%, $weight: normal);
+    letter-spacing: 0.06em;
+  }
+}

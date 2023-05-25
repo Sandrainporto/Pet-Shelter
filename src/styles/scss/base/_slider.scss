@@ -1,0 +1,151 @@
+@import "../base/cards";
+
+.our-friends__slider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  height: 435px;
+  margin: 60px 0;
+}
+.slider-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 0 12px;
+  max-width: 990px;
+  overflow: hidden;
+  @media (max-width: 1200px) {
+    width: 580px;
+    margin: 0 auto;
+  }
+  @media (max-width: 767px) {
+    width: 270px;
+    margin: 0 auto;
+  }
+}
+.slider__box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: relative;
+  left: -990px;
+  @media (max-width: 1200px) {
+    left: -580px;
+  }
+  @media (max-width: 767px) {
+    left: -270px;
+  }
+}
+.slider__block {
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+  width: 990px;
+  @media (max-width: 1200px) {
+    width: 580px;
+    gap: 40px;
+  }
+  @media (max-width: 767px) {
+    width: 270px;
+  }
+}
+
+@keyframes move-right {
+  from {
+    left: -990px;
+    @media (max-width: 1201px) {
+      left: -580px;
+    }
+  }
+  to {
+    left: -1980px;
+    @media (max-width: 1201px) {
+      left: -1160px;
+    }
+  }
+}
+// #active-block{
+//   position: relative;
+//     left: 0px;
+// }
+.transition-right {
+  animation-name: move-right;
+  animation-duration: 2s;
+}
+
+@keyframes move-left {
+  from {
+    left: -990px;
+  }
+  to {
+    left: 0px;
+  }
+}
+// position: relative;
+//     left: 990px;
+.transition-left {
+  animation-name: move-left;
+  animation-duration: 2s;
+}
+
+@media (max-width: 1201px) {
+  @keyframes move-right {
+    from {
+      left: -580px;
+    }
+
+    to {
+      left: -1160px;
+    }
+  }
+  @keyframes move-left {
+    from {
+      left: -580px;
+    }
+    to {
+      left: 0px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  @keyframes move-right {
+    from {
+      left: -270px;
+    }
+
+    to {
+      left: -540px;
+    }
+  }
+  @keyframes move-left {
+    from {
+      left: -270px;
+    }
+    to {
+      left: 0px;
+    }
+  }
+  .transition-left {
+    animation-duration: 1s;
+  }
+  .transition-right {
+    animation-duration: 1s;
+  }
+}
+
+// .slider__cards {
+//   display: flex;
+//   flex-direction: row;
+//   gap: 90px;
+//   max-width: 991px;
+//   overflow: hidden;
+//   @media (max-width: 1200px) {
+//     max-width: 580px;
+//     gap: 40px;
+//   }
+//   @media (max-width: 767px) {
+//     max-width: 270px;
+//   }
+// }

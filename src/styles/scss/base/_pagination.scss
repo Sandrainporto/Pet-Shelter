@@ -1,0 +1,75 @@
+
+.our-friends__pagination {
+  width: 100%;
+	float: left;
+  overflow: hidden;
+  margin: 60px auto;
+  @media (max-width: 1279px) {
+    height: 920px;
+    // overflow: hidden;
+    margin: 30px auto;
+
+  }
+  @media (max-width: 948px) {
+    height: 1373px;
+    // overflow: hidden;
+  }
+  @media (max-width: 500px) {
+    margin: 42px auto;
+
+  }
+}
+.pagination__cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 32px 40px;
+  flex-wrap: wrap;
+}
+.pet__image {
+  position: relative;
+  width: 270px;
+  height: 270px;
+}
+.pet__image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pagination__controls {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  @media (max-width: 500px) {
+    margin-top: -9px;
+    gap: 10px;
+    font-size: 16px;
+  }
+}
+.block__pet{
+	float: left;
+	position: relative;
+}
+.block__pet.hide{
+	display: none;
+}
+.block__pet.show{
+	display: flex;
+	animation: show .5s ease;
+}
+@keyframes show{
+    0%{
+    	opacity:0;
+    	transform: scale(0.9);
+    }
+    100%{
+    	opacity:1;
+    	transform: scale(1);
+    }
+}
+
+
+
+
+

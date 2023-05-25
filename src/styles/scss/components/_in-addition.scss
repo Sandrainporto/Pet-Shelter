@@ -1,0 +1,114 @@
+.in-addition {
+  background: $bg-swiper;
+}
+.in-addition__content {
+  display: flex;
+  flex-direction: row;
+  max-width: 915px;
+  margin: 0 auto;
+  @media (max-width: 980px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-items: center;
+    max-width: $tablet-width;
+    gap: 49px;
+    margin: 0 auto;
+  }
+  @media (max-width: 500px) {
+    padding: 0 10px;
+  }
+}
+.in-addition__image {
+  flex: 0 1 58.5%;
+  margin-top: 10px;
+  @media (max-width: 400px) {
+    margin: 0 auto;
+  }
+}
+.in-addition__image img {
+  max-width: 100%;
+  @media (max-width: 400px) {
+    max-width: 92%;
+    margin-top: -6px;
+    margin-left: 11px;
+  }
+}
+.in-addition__info {
+  flex: 0 1 41.5%;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  max-width: 380px;
+  margin-top: -1px;
+  @media (max-width: 400px) {
+    margin-top: -2px;
+  }
+}
+.in-addition__title {
+  max-width: 300px;
+  @media (max-width: 500px) {
+    margin: 0 auto;
+  }
+  @media (max-width: 400px) {
+    max-width: 229px;
+    text-align: center;
+  }
+}
+.in-addition__donation {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @extend %font-add;
+  color: $color-title;
+  letter-spacing: 0.06em;
+  @media (max-width: 500px) {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.donation__bank {
+  @include font($size: 1.5rem, $height: 110%, $weight: normal);
+  @media (max-width: 500px) {
+    line-height: 160%;
+    letter-spacing: normal;
+  }
+}
+.donation__card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 15px;
+  max-width: 349px;
+  min-width: 281px;
+  padding: 10px 15px;
+  background: $button-bg;
+  border-radius: 9px;
+  transition: all 0.5s ease-in-out;
+  @media (max-width: 400px) {
+    padding: 11px 15px 9px;
+  }
+  &:hover {
+    background: $button-bg-hover;
+    border-color: $button-bg-hover;
+  }
+}
+.donation__card-number {
+  @include font($size: 2rem, $height: 115%, $weight: normal);
+  letter-spacing: 0.055em;
+  color: $color-title;
+  @media (max-width: 500px) {
+    @include adaptiv-font(20, 15);
+  }
+}
+.donation__message {
+  @extend %font-prim;
+  @include font($size: 1.2rem, $height: 150%, $weight: normal);
+  letter-spacing: normal;
+  color: $dark-m;
+  font-style: italic;
+  @media (max-width: 500px) {
+    text-align: justify;
+  }
+}
