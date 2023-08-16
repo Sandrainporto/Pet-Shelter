@@ -1,5 +1,7 @@
 ##  An adaptive two-paged website with a slider and a pagination
 *********************************
+![rolling-scopes-school github io_sandrainporto-JSFE2023Q1_shelter_pages_main_index html](https://github.com/Sandrainporto/Pet-Shelter/assets/90930428/7ae27652-0831-4977-88d1-2d0545e495ea)
+
 ###  Technologies : Vanilla JavaScript and Scss/Css.
 #### **[Show project](https://sandrainporto.github.io/Pet-Shelter/pages/main/index.html)**
 
