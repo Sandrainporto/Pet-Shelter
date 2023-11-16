@@ -1,4 +1,4 @@
-##  An adaptive two-paged website with a slider and a pagination
+##  An adaptive two-paged website with a slider, pagination, modal windows
 #### **[Show project](https://sandrainporto.github.io/Pet-Shelter/pages/main/index.html)**
 
 *********************************
